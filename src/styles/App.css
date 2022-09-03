@@ -1,0 +1,15 @@
+#main-app-container {
+	background-color: #232323;
+
+	width: 100%;
+	height: 100vh;
+}
+
+#main-container {
+	display: grid;
+
+	grid-template-rows: var(--titlebar-height) auto;
+
+	height: 100%;
+	width: 100%;
+}
