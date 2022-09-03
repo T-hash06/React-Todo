@@ -1,0 +1,26 @@
+.toggler-button {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	background-color: transparent;
+
+	width: 55%;
+	height: 55%;
+
+	justify-self: center;
+	align-self: center;
+
+	border: none;
+	outline: none;
+}
+
+.toggler-button .decorator {
+	border-radius: var(--border-radius);
+	border: 3px solid var(--ter-color);
+	width: 60%;
+	height: 60%;
+
+	justify-self: center;
+	align-self: center;
+}

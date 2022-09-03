@@ -1,6 +1,13 @@
 :root {
 	--sidebar-width: 350px;
 	--titlebar-height: 100px;
+
+	--main-color: #531cb3;
+	--sec-color: #944bbb;
+	--ter-color: #aa7bc3;
+	--back-color: #e0e0e0;
+	--grey: #424242;
+	--border-radius: 6px;
 }
 
 * {

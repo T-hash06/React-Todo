@@ -5,20 +5,9 @@
 	display: grid;
 	grid-template-columns: var(--titlebar-height) auto;
 
-	background-color: #333;
-}
+	background-color: var(--main-color);
 
-.title-bar-container .toggle-bar-button {
-	justify-self: center;
-	align-self: center;
-
-	width: 80%;
-	height: 80%;
-
-	border: none;
-	outline: none;
-
-	cursor: pointer;
+	box-shadow: 0px 4px 10px #00000093;
 }
 
 .title-bar-container .title {
@@ -27,5 +16,8 @@
 	align-items: center;
 
 	text-transform: capitalize;
-	color: #ccc;
+	color: var(--back-color);
+	font-weight: 400;
+
+	margin-right: var(--titlebar-height);
 }
