@@ -1,0 +1,23 @@
+.rect-button {
+	width: 45%;
+	height: 55px;
+
+	color: var(--main-color);
+
+	border: 1px solid var(--main-color);
+	border-radius: var(--border-radius);
+
+	font-size: 18px;
+	text-transform: capitalize;
+
+	outline: none;
+
+	cursor: pointer;
+
+	/* box-shadow: 0px 0px 10px #303030; */
+}
+
+.rect-button.main {
+	color: var(--back-color);
+	background-color: var(--main-color);
+}

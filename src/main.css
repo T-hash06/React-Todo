@@ -1,13 +1,18 @@
 :root {
 	--sidebar-width: 350px;
 	--titlebar-height: 100px;
+	--todo-section-height: 300px;
 
 	--main-color: #531cb3;
 	--sec-color: #944bbb;
 	--ter-color: #aa7bc3;
 	--back-color: #e0e0e0;
+	--shadow-color: #00000071;
 	--grey: #424242;
+	--light-grey: #9c9c9c;
+
 	--border-radius: 6px;
+	--box-shadow: 0px 0px 16px var(--shadow-color);
 }
 
 * {
