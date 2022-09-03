@@ -1,5 +1,6 @@
-import { toggleActive } from "../stores/SideBar";
 import "../styles/TitleBar.css";
+
+import { toggleActive } from "../stores/SideBar";
 import SideBarButton from "./SideBarButton";
 
 interface props {

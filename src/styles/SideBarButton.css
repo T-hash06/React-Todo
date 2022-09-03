@@ -13,11 +13,13 @@
 
 	border: none;
 	outline: none;
+
+	cursor: pointer;
 }
 
 .toggler-button .decorator {
 	border-radius: var(--border-radius);
-	border: 3px solid var(--ter-color);
+	border: 3px solid var(--back-color);
 	width: 60%;
 	height: 60%;
 
