@@ -38,6 +38,8 @@
 
 	width: 90%;
 	height: 80%;
+
+	transition: 40ms;
 }
 
 #add-todo-section .text-section .text-area {
@@ -53,6 +55,10 @@
 
 	width: 80%;
 	height: 80%;
+}
+
+#add-todo-section .text-section .text-area-container:focus-within {
+	border: 2px solid var(--main-color);
 }
 
 #add-todo-section .buttons-section {

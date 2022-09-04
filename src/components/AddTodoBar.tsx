@@ -1,6 +1,8 @@
 import "../styles/AddTodoBar.css";
-import AddTodoSection from "./AddTodoSection";
+
 import { toggleSection } from "../stores/TodoSection";
+
+import AddTodoSection from "./AddTodoSection";
 
 export default function AddTodoBar() {
 	return (

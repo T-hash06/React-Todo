@@ -1,14 +1,14 @@
 import "../styles/App.css";
 
-import { isActive, toggleActive } from "../stores/SideBar";
 import { sectionActive, toggleSection } from "../stores/TodoSection";
-import { todos } from "../stores/Todos";
+import { isActive, toggleActive } from "../stores/SideBar";
 import { useStore } from "@nanostores/react";
+import { todos } from "../stores/Todos";
 import { MouseEvent } from "react";
 
-import SideBar from "./SideBar";
-import TitleBar from "./TitleBar";
 import AddTodoBar from "./AddTodoBar";
+import TitleBar from "./TitleBar";
+import SideBar from "./SideBar";
 
 export default function App() {
 	const todoList = useStore(todos);

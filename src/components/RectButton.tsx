@@ -1,5 +1,6 @@
-import { MouseEvent } from "react";
 import "../styles/RectButton.css";
+
+import { MouseEvent } from "react";
 
 interface props {
 	main?: boolean;

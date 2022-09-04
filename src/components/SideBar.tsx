@@ -1,6 +1,7 @@
 import "../styles/SideBar.css";
-import { useStore } from "@nanostores/react";
+
 import { isActive, toggleActive } from "../stores/SideBar";
+import { useStore } from "@nanostores/react";
 
 export default function SideBar() {
 	const activeBar = useStore(isActive);
