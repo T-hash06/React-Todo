@@ -1,5 +1,11 @@
 .check-button {
 	--size: 30px;
+	--active-color: var(--main-color);
+	--time: 300ms;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	justify-self: center;
 	align-self: center;
@@ -11,9 +17,25 @@
 	border: 1px solid var(--grey);
 
 	cursor: pointer;
+	overflow: hidden;
+
+	transition-duration: var(--time);
+}
+
+.check-button .check-icon {
+	font-size: 22px;
+	margin-top: 2px;
+
+	opacity: 0;
+	transition: var(--time);
+	color: var(--back-color);
 }
 
 .check-button.checked {
-	background-color: var(--ter-color);
-	border-color: var(--ter-color);
+	background-color: var(--active-color);
+	border-color: var(--active-color);
+}
+
+.check-button.checked .check-icon {
+	opacity: 1;
 }

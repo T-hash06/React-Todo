@@ -1,5 +1,6 @@
-import { toggleTodo } from "../stores/Todos";
 import "../styles/TodoItem.css";
+
+import { toggleTodo } from "../stores/Todos";
 
 import CheckButton from "./CheckButton";
 

@@ -1,5 +1,6 @@
 import "../styles/CheckButton.css";
 
+import { FiCheck } from "react-icons/fi";
 import { useState } from "react";
 
 interface props {
@@ -16,7 +17,9 @@ export default function CheckButton({ onClick, isCheked }: props) {
 	};
 	return (
 		<>
-			<button className={`check-button ${checked ? "checked" : ""}`} onClick={handleToggle} />
+			<button className={`check-button ${checked ? "checked" : ""}`} onClick={handleToggle}>
+				<FiCheck className="check-icon" />
+			</button>
 		</>
 	);
 }
