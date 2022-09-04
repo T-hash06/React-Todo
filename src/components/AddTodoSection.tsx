@@ -18,7 +18,7 @@ export default function AddTodoSection() {
 	const handleAddTodo = (event: MouseEvent) => {
 		if (newTodo === "") return;
 
-		addTodo(newTodo);
+		addTodo({ content: newTodo, done: false, createdAt: new Date() });
 		setTodo("");
 		toggleSection();
 	};

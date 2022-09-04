@@ -2,17 +2,21 @@ import "../styles/App.css";
 
 import { sectionActive, toggleSection } from "../stores/TodoSection";
 import { isActive, toggleActive } from "../stores/SideBar";
-import { useStore } from "@nanostores/react";
-import { todos } from "../stores/Todos";
-import { MouseEvent } from "react";
+import { MouseEvent, useEffect } from "react";
+import { setTodos } from "../stores/Todos";
 
 import AddTodoBar from "./AddTodoBar";
 import TitleBar from "./TitleBar";
-import SideBar from "./SideBar";
 import TodoList from "./TodoList";
+import SideBar from "./SideBar";
 
 export default function App() {
-	const todoList = useStore(todos);
+	useEffect(() => {
+		const storedData = localStorage.getItem("todos");
+
+		if (storedData === null) localStorage.setItem("todos", JSON.stringify([]));
+		else setTodos(JSON.parse(storedData) as unknown as Todo[]);
+	});
 
 	const handleClick = (_: MouseEvent) => {
 		if (isActive.get()) {

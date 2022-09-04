@@ -16,7 +16,7 @@ export default function TodoList({ onClick }: props) {
 		<>
 			<ul id="todo-list-container" onClick={onClick}>
 				{todoList.map((value, index) => (
-					<TodoItem content={value} key={index} />
+					<TodoItem todo={value} key={index} id={index} />
 				))}
 			</ul>
 		</>

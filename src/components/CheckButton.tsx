@@ -4,10 +4,11 @@ import { useState } from "react";
 
 interface props {
 	onClick: () => void;
+	isCheked: boolean;
 }
 
-export default function CheckButton({ onClick }: props) {
-	const [checked, setChecked] = useState(false);
+export default function CheckButton({ onClick, isCheked }: props) {
+	const [checked, setChecked] = useState(isCheked);
 
 	const handleToggle = () => {
 		setChecked(!checked);

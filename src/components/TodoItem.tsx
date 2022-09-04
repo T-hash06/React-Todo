@@ -1,22 +1,23 @@
+import { toggleTodo } from "../stores/Todos";
 import "../styles/TodoItem.css";
-
-import { MouseEvent } from "react";
 
 import CheckButton from "./CheckButton";
 
 interface props {
-	content: string;
+	todo: Todo;
+	id: number;
 }
 
-export default function TodoItem({ content }: props) {
+export default function TodoItem({ todo, id }: props) {
 	const handleClick = () => {
-		console.log("Clciked");
+		toggleTodo(id);
 	};
+
 	return (
 		<>
 			<li className="todo-container">
-				<p className="text">{content}</p>
-				<CheckButton onClick={handleClick} />
+				<p className="text">{todo.content}</p>
+				<CheckButton onClick={handleClick} isCheked={todo.done} />
 			</li>
 		</>
 	);
