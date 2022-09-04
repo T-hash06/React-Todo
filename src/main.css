@@ -3,7 +3,7 @@
 :root {
 	--sidebar-width: 350px;
 	--titlebar-height: 100px;
-	--todo-section-height: 300px;
+	--todo-section-height: 30%;
 
 	--main-color: #531cb3;
 	--sec-color: #944bbb;

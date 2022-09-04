@@ -9,6 +9,7 @@ import { MouseEvent } from "react";
 import AddTodoBar from "./AddTodoBar";
 import TitleBar from "./TitleBar";
 import SideBar from "./SideBar";
+import TodoList from "./TodoList";
 
 export default function App() {
 	const todoList = useStore(todos);
@@ -28,11 +29,7 @@ export default function App() {
 			<SideBar />
 			<div id="main-container">
 				<TitleBar title="all tasks" />
-				<div id="content" onClick={handleClick}>
-					{todoList.map((value, index) => (
-						<h2 key={index}>{value}</h2>
-					))}
-				</div>
+				<TodoList onClick={handleClick} />
 				<AddTodoBar />
 			</div>
 		</div>

@@ -36,8 +36,8 @@
 	border: 1px solid var(--light-grey);
 	border-radius: var(--border-radius);
 
-	width: 90%;
-	height: 80%;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
 
 	transition: 40ms;
 }
@@ -53,8 +53,8 @@
 	word-break: break-all;
 	background-color: transparent;
 
-	width: 80%;
-	height: 80%;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
 }
 
 #add-todo-section .text-section .text-area-container:focus-within {
