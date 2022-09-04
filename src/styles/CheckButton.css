@@ -1,0 +1,19 @@
+.check-button {
+	--size: 30px;
+
+	justify-self: center;
+	align-self: center;
+	width: var(--size);
+	height: var(--size);
+
+	outline: none;
+	border-radius: 50%;
+	border: 1px solid var(--grey);
+
+	cursor: pointer;
+}
+
+.check-button.checked {
+	background-color: var(--ter-color);
+	border-color: var(--ter-color);
+}
