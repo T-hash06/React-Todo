@@ -17,14 +17,41 @@
 }
 
 .todo-container .text {
+	position: relative;
+
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	font-size: 16px;
+
+	width: fit-content;
+	max-width: 100%;
+
+	overflow: hidden;
 
 	font-size: 20px;
 
-	overflow: auto;
+	transition-duration: 200ms;
+}
+
+.todo-container.done .text {
+	color: var(--light-grey);
+}
+
+.todo-container .text .decorator {
+	position: absolute;
+	height: 2px;
+	width: 0px;
+
+	margin-top: 2px;
+	background-color: var(--grey);
+
+	transition-duration: 400ms;
+
+	left: -3px;
+}
+
+.todo-container.done .text .decorator {
+	width: calc(100% + 6px);
 }
 
 @keyframes enter {

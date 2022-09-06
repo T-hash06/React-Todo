@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
 
 :root {
-	--sidebar-width: 350px;
+	--sidebar-width: clamp(100px, 80%, 300px);
 	--titlebar-height: 100px;
-	--todo-section-height: 30%;
+	--todo-section-height: clamp(240px, 40%, 300px);
 
 	--main-color: #531cb3;
 	--sec-color: #944bbb;
