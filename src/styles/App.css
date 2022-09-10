@@ -3,6 +3,20 @@
 
 	width: 100%;
 	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+
+	max-width: 750px;
+	max-height: 870px;
+
+	outline: 2px solid var(--main-color);
+	box-shadow: var(--box-shadow);
+
+	overflow: hidden;
 }
 
 #main-container {
