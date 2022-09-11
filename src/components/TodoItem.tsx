@@ -1,8 +1,9 @@
 import "../styles/TodoItem.css";
 
-import { toggleTodo } from "../stores/Todos";
+import { deleteTodo, toggleTodo } from "../stores/Todos";
 import { useState } from "react";
 
+import DeleteButton from "./DeleteButton";
 import CheckButton from "./CheckButton";
 
 interface props {
@@ -12,10 +13,13 @@ interface props {
 
 export default function TodoItem({ todo, id }: props) {
 	const [done, setDone] = useState(todo.done);
-
-	const handleClick = () => {
+	const handleDone = () => {
 		setDone(!done);
 		toggleTodo(id);
+	};
+
+	const handleDelete = () => {
+		deleteTodo(id);
 	};
 	return (
 		<>
@@ -24,7 +28,8 @@ export default function TodoItem({ todo, id }: props) {
 					{todo.content}
 					<span className="decorator" />
 				</p>
-				<CheckButton onClick={handleClick} isCheked={todo.done} />
+				<CheckButton onClick={handleDone} isCheked={todo.done} />
+				<DeleteButton onClick={handleDelete} />
 			</li>
 		</>
 	);

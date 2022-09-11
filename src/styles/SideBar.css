@@ -1,4 +1,8 @@
 #side-bar-container {
+	display: flex;
+	justify-content: right;
+	align-items: flex-start;
+
 	position: absolute;
 	top: 0px;
 	left: calc(var(--sidebar-width) * -1);
@@ -9,7 +13,6 @@
 	height: 100%;
 
 	background-color: var(--back-color);
-	
 
 	transition: 600ms;
 }

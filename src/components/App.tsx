@@ -29,13 +29,15 @@ export default function App() {
 	};
 
 	return (
-		<div id="main-app-container">
-			<SideBar />
-			<div id="main-container">
-				<TitleBar title="all tasks" />
-				<TodoList onClick={handleClick} />
-				<AddTodoBar />
+		<>
+			<div id="main-app-container">
+				<SideBar />
+				<div id="main-container">
+					<TitleBar title="all tasks" />
+					<TodoList onClick={handleClick} />
+					<AddTodoBar />
+				</div>
 			</div>
-		</div>
+		</>
 	);
 }

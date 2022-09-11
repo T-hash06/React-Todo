@@ -1,0 +1,23 @@
+.delete-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	justify-self: center;
+	align-self: center;
+
+	border: none;
+	outline: none;
+
+	border-radius: 50%;
+	width: var(--buttons-size);
+	height: var(--buttons-size);
+
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.delete-icon {
+	color: #b30000;
+	font-size: calc(var(--buttons-size) - 2px);
+}

@@ -1,5 +1,4 @@
 .check-button {
-	--size: 30px;
 	--active-color: var(--main-color);
 	--time: 300ms;
 
@@ -9,8 +8,8 @@
 
 	justify-self: center;
 	align-self: center;
-	width: var(--size);
-	height: var(--size);
+	width: var(--buttons-size);
+	height: var(--buttons-size);
 
 	outline: none;
 	border-radius: 50%;
